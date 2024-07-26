@@ -1,0 +1,130 @@
+.f-heading {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.f-body {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.f-caption {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.f-caption-bold {
+  font-size: 16px;
+  font-size: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #0d192c;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card-wrapper .card {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding: 24px;
+  background-color: #15263f;
+  color: #8bacd9;
+  border-radius: 15px;
+}
+.card-wrapper .card__img {
+  border-radius: 8px;
+  width: 100%;
+}
+.card-wrapper .card__img-container {
+  position: relative;
+  display: flex;
+}
+.card-wrapper .card__img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00fff8;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+.card-wrapper .card__img-container:hover::after {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.card-wrapper .card__img-container:hover .card__img-view {
+  opacity: 1;
+}
+.card-wrapper .card__img-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card-wrapper .card__title {
+  color: #ffffff;
+}
+.card-wrapper .card__title:hover {
+  cursor: pointer;
+  color: #00fff8;
+}
+.card-wrapper .card__details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2e405a;
+  padding-bottom: 21px;
+}
+.card-wrapper .card__price {
+  display: flex;
+  gap: 6px;
+}
+.card-wrapper .card__price-value {
+  color: #00fff8;
+}
+.card-wrapper .card__time {
+  display: flex;
+  gap: 8px;
+}
+.card-wrapper .card__footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.card-wrapper .card__avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+.card-wrapper .card__creator-name {
+  color: #ffffff;
+}
+.card-wrapper .card__creator-name:hover {
+  cursor: pointer;
+  color: #00fff8;
+}
+@media (max-width: 425px) {
+  .card-wrapper .card {
+    max-width: 327px;
+  }
+}/*# sourceMappingURL=style.css.map */

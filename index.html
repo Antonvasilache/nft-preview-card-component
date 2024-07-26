@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main class="card-wrapper">
+      <div class="card">
+        <div class="card__img-container">
+          <img
+            src="/images/image-equilibrium.jpg"
+            alt="equilibrium cube"
+            class="card__img"
+          />
+          <img
+            src="/images/icon-view.svg"
+            alt="view icon"
+            class="card__img-view"
+          />
+        </div>
+        <h1 class="card__title f-heading">Equilibrium #3429</h1>
+        <p class="card__description f-body">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="card__details">
+          <div class="card__price">
+            <img
+              src="/images/icon-ethereum.svg"
+              alt="ethereum symbol"
+              class="card__icon"
+            /><span class="card__price-value f-caption-bold">0.041 ETH</span>
+          </div>
+          <div class="card__time">
+            <img
+              src="/images/icon-clock.svg"
+              alt="clock"
+              class="card__icon"
+            /><span class="card__time-value">3 days left</span>
+          </div>
+        </div>
+        <footer class="card__footer">
+          <img
+            src="/images/image-avatar.png"
+            alt="avatar"
+            class="card__avatar"
+          />
+          <span class="card__creator"
+            >Creation of
+            <span class="card__creator-name">Jules Wyvern</span></span
+          >
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
