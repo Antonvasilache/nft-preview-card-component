@@ -70,12 +70,17 @@ body {
     }
 
     &__title {
+      @extend .f-heading;
       color: $White;
 
       &:hover {
         cursor: pointer;
         color: $Cyan;
       }
+    }
+
+    &__description {
+      @extend .f-body;
     }
 
     &__details {
@@ -86,6 +91,7 @@ body {
     }
 
     &__price {
+      @extend .f-caption-bold;
       display: flex;
       gap: 6px;
 

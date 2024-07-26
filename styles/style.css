@@ -1,9 +1,9 @@
-.f-heading {
+.f-heading, .card-wrapper .card__title {
   font-size: 22px;
   font-weight: 600;
 }
 
-.f-body {
+.f-body, .card-wrapper .card__description {
   font-size: 18px;
   font-weight: 300;
   line-height: 26px;
@@ -14,7 +14,7 @@
   font-weight: 400;
 }
 
-.f-caption-bold {
+.f-caption-bold, .card-wrapper .card__price {
   font-size: 16px;
   font-size: 600;
 }
